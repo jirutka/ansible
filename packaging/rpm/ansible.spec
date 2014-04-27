@@ -33,6 +33,7 @@ Requires: python26-setuptools
 # RHEL == 6
 %if 0%{?rhel} == 6
 Requires: python-crypto2.6
+# We should have a python26-gnupg here but EPEL is not carrying it, work around via pip
 %endif
 
 # RHEL > 5
@@ -45,6 +46,7 @@ Requires: python-jinja2
 Requires: python-keyczar
 Requires: python-httplib2
 Requires: python-setuptools
+Requires: python-gnupg
 %endif
 
 # FEDORA > 17
@@ -57,6 +59,7 @@ Requires: python-jinja2
 Requires: python-keyczar
 Requires: python-httplib2
 Requires: python-setuptools
+Requires: python-gnupg
 %endif
 
 # SuSE/openSuSE
